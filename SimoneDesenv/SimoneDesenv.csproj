@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\NovaPasta1\**" />
+    <Content Remove="Views\Home\NovaPasta1\**" />
+    <EmbeddedResource Remove="Views\Home\NovaPasta1\**" />
+    <None Remove="Views\Home\NovaPasta1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Home\logo.png" />
+    <None Remove="Views\Home\rcky.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Home\NovaPasta2\" />
+    <Folder Include="Views\Home\NovaPasta\" />
+  </ItemGroup>
+
+</Project>
